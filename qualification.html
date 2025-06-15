@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qualification - Nurin Batrisyia</title>
+  <style>
+    :root {
+      --bg: #fff1e6;
+      --bg2: #ffe5f1;
+      --text: #444;
+      --primary: #ffb3c6;
+      --accent: #cc3366;
+      --card-bg: #ffffffd6;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --btn-bg: #ff99af;
+      --btn-text: #fff;
+    }
+
+    body.dark-mode {
+      --bg: #2d1a1f;
+      --bg2: #3a1f28;
+      --text: #f8f0f3;
+      --primary: #66293a;
+      --accent: #ffadc1;
+      --card-bg: #4e2c36;
+      --shadow: rgba(255, 255, 255, 0.05);
+      --btn-bg: #874b61;
+      --btn-text: #fbe7ee;
+    }
+
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, var(--bg), var(--bg2));
+      color: var(--text);
+      animation: fadeIn 1.2s ease-in-out;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 3px 10px var(--shadow);
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.1em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .skills-card {
+      background: var(--card-bg);
+      border-radius: 15px;
+      max-width: 600px;
+      margin: 40px auto 20px;
+      padding: 25px 30px;
+      box-shadow: 0 6px 12px var(--shadow);
+    }
+
+    .skills-card h3 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: var(--accent);
+      margin-bottom: 15px;
+    }
+
+    .skills-card ul {
+      list-style-type: "💻 ";
+      padding: 0;
+      text-align: left;
+    }
+
+    .skills-card li {
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+
+    .dark-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--btn-bg);
+      color: var(--btn-text);
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nurin Batrisyia</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html">Experience</a>
+      <a href="qualification.html">Qualification</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section id="qualification">
+    <h2>🌟 My Skills & Qualifications</h2>
+    <p>
+      I'm pretty confident when it comes to using computers and library systems, especially the ones that help manage books, digital content, and user services. I enjoy organizing collections, keeping things neat and easy to find, and helping others get the information they need whether it's finding a resource or understanding how the system works.
+      <br><br>
+      I'm also someone who picks up new skills quickly and really enjoys learning new tools or ways to work better. I love being in environments where teamwork and good vibes matter, and I’m always ready to help out, solve small problems, or support others however I can. Honestly, I’ve always loved books and being around people who enjoy learning so being able to mix both through library work feels like the perfect match for me. 📚✨
+    </p>
+
+    <div class="skills-card">
+      <h3>✨ Soft Skills </h3>
+      <ul>
+        <li>Canva (design posters & visuals)</li>
+        <li>Microsoft Word, PowerPoint & Excel</li>
+        <li>Online cataloguing tools</li>
+        <li>Basic graphic editing</li>
+        <li>Public speaking & teamwork</li>
+        <li>Customer service (help desk experience)</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nurin Batrisyia</p>
+  </footer>
+
+  <button class="dark-toggle" onclick="toggleMode()">🌙 Toggle Mode</button>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
